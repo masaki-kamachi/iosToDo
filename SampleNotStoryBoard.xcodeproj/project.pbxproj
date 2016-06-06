@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		F48AC5B31D04126300C07320 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AC5B21D04126300C07320 /* AppDelegate.swift */; };
 		F48AC5B51D04126300C07320 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AC5B41D04126300C07320 /* ViewController.swift */; };
-		F48AC5B81D04126300C07320 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F48AC5B61D04126300C07320 /* Main.storyboard */; };
 		F48AC5BB1D04126400C07320 /* SampleNotStoryBoard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F48AC5B91D04126300C07320 /* SampleNotStoryBoard.xcdatamodeld */; };
 		F48AC5BD1D04126400C07320 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F48AC5BC1D04126400C07320 /* Assets.xcassets */; };
 		F48AC5C01D04126400C07320 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F48AC5BE1D04126400C07320 /* LaunchScreen.storyboard */; };
 		F48AC5CB1D04126400C07320 /* SampleNotStoryBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AC5CA1D04126400C07320 /* SampleNotStoryBoardTests.swift */; };
 		F48AC5D61D04126400C07320 /* SampleNotStoryBoardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AC5D51D04126400C07320 /* SampleNotStoryBoardUITests.swift */; };
+		F48AC5E81D0464C200C07320 /* ToDoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AC5E71D0464C200C07320 /* ToDoStore.swift */; };
+		F48AC5EA1D0468A600C07320 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AC5E91D0468A600C07320 /* EditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,6 @@
 		F48AC5AF1D04126300C07320 /* SampleNotStoryBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleNotStoryBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F48AC5B21D04126300C07320 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F48AC5B41D04126300C07320 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F48AC5B71D04126300C07320 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F48AC5BA1D04126300C07320 /* SampleNotStoryBoard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SampleNotStoryBoard.xcdatamodel; sourceTree = "<group>"; };
 		F48AC5BC1D04126400C07320 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F48AC5BF1D04126400C07320 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		F48AC5D11D04126400C07320 /* SampleNotStoryBoardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleNotStoryBoardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F48AC5D51D04126400C07320 /* SampleNotStoryBoardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleNotStoryBoardUITests.swift; sourceTree = "<group>"; };
 		F48AC5D71D04126400C07320 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F48AC5E71D0464C200C07320 /* ToDoStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoStore.swift; sourceTree = "<group>"; };
+		F48AC5E91D0468A600C07320 /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +103,12 @@
 			children = (
 				F48AC5B21D04126300C07320 /* AppDelegate.swift */,
 				F48AC5B41D04126300C07320 /* ViewController.swift */,
-				F48AC5B61D04126300C07320 /* Main.storyboard */,
 				F48AC5BC1D04126400C07320 /* Assets.xcassets */,
 				F48AC5BE1D04126400C07320 /* LaunchScreen.storyboard */,
 				F48AC5C11D04126400C07320 /* Info.plist */,
 				F48AC5B91D04126300C07320 /* SampleNotStoryBoard.xcdatamodeld */,
+				F48AC5E71D0464C200C07320 /* ToDoStore.swift */,
+				F48AC5E91D0468A600C07320 /* EditViewController.swift */,
 			);
 			path = SampleNotStoryBoard;
 			sourceTree = "<group>";
@@ -234,7 +237,6 @@
 			files = (
 				F48AC5C01D04126400C07320 /* LaunchScreen.storyboard in Resources */,
 				F48AC5BD1D04126400C07320 /* Assets.xcassets in Resources */,
-				F48AC5B81D04126300C07320 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +261,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F48AC5EA1D0468A600C07320 /* EditViewController.swift in Sources */,
 				F48AC5B51D04126300C07320 /* ViewController.swift in Sources */,
+				F48AC5E81D0464C200C07320 /* ToDoStore.swift in Sources */,
 				F48AC5BB1D04126400C07320 /* SampleNotStoryBoard.xcdatamodeld in Sources */,
 				F48AC5B31D04126300C07320 /* AppDelegate.swift in Sources */,
 			);
@@ -297,14 +301,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F48AC5B61D04126300C07320 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F48AC5B71D04126300C07320 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F48AC5BE1D04126400C07320 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
